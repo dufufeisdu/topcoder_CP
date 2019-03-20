@@ -15,6 +15,7 @@
 #include "all_primes.hpp"
 #include <unordered_map>
 typedef vector<vector<int>> vvi;
+typedef unordered_map<int, bool> dictib;
 using namespace std;
 
 
@@ -28,12 +29,10 @@ int main(int argc, const char * argv[]) {
   PrimeAlters p = PrimeAlters();
   vi a = {100003,294001};
   vi b = {100003,100003};
-  vi c = {7331};
-  vi d = {8219};
-  string s =p.isReachable(c, d);
+  vi c = {7331,72652729};
+  vi d = {8219,28784281};
+  string s =p.isReachable(a, b);
+  cout<<p.isPrime(c[1]);
   cout<<s<<endl;
-//  for (auto a:all_prime(1000)){
-//    cout<<a<<" ";
-//  }
   return 0;
 }
